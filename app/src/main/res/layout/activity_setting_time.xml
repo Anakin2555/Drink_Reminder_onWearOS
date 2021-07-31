@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_time">
+    <com.heytap.wearable.support.widget.HeyBackTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heybacktitle_5"
+        android:layout_marginTop="-4dp"
+        app:heyText="提醒时间"/>
+    <!--<TextView
+        android:id="@+id/text_switch_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heybacktitle_5"
+        android:layout_marginTop="-1dp"
+        android:text="全部开启"
+        android:textSize="24sp"/>
+    <Switch
+        android:id="@+id/switch_all"
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:checked="true"
+        android:thumb="@null"
+        android:track="@null"
+        android:layout_alignBottom="@id/text_switch_all"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/switch_reminding_item_background"
+        />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="-8dp"
+        android:layout_below="@id/heybacktitle_5"/>
+
+
+
+
+
+</RelativeLayout>

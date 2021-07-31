@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_time_timepicker">
+    <com.heytap.wearable.support.widget.HeyBackTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heybacktitle_6"
+        android:layout_marginTop="-4dp"
+        app:heyText="提醒时间"/>
+    <com.heytap.wearable.support.widget.HeyTimePicker
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/heybacktitle_6"
+        android:layout_marginTop="-8dp"
+        android:layout_marginStart="-62dp"
+        android:id="@+id/time_pickers"
+        tools:ignore="NotSibling" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heybacktitle_6"
+        android:layout_marginTop="41dp"
+        android:text=":"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/setting_reminding_time_confirm"
+        android:layout_marginTop="166dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_width="85.5dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_1_blue_background"
+        android:text="确定"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"/>
+    <Button
+        android:id="@+id/setting_reminding_time_again"
+        android:layout_marginTop="166dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="4dp"
+        android:layout_width="85.5dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_1_background"
+        android:text="继续添加"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"/>
+
+
+
+</RelativeLayout>

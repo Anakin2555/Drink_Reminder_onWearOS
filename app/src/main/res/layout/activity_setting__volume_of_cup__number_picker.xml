@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_VolumeOfCup_NumberPicker">
+    <com.heytap.wearable.support.widget.HeyBackTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heybacktitle_3"
+        android:layout_marginTop="-4dp"
+        app:heyText="水杯容量"
+
+        />
+    <com.heytap.wearable.support.widget.HeyNumberPicker
+
+        android:layout_below="@id/heybacktitle_3"
+        android:id="@+id/setting_volume_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        
+        app:heyTextArray="@array/volume"
+        />
+    <Button
+        android:id="@+id/setting_volume_input_confirm"
+        android:layout_marginTop="166dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_2_background"
+        android:text="确定"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"/>
+
+
+
+
+</RelativeLayout>

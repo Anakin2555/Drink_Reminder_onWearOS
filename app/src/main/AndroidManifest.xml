@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Anakin.drink_reminder">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="internalOnly"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".History"></activity>
+
+        <service
+            android:name=".complicationData.ShortTextProviderService"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/logo_complication"
+            android:label="已喝水量"
+            android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
+            <intent-filter>
+                <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.wearable.complications.SUPPORTED_TYPES"
+                android:value="SHORT_TEXT" />
+            <meta-data
+                android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
+                android:value="300" />
+        </service>
+
+        <receiver
+            android:name=".complicationData.ComplicationToggleReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".welcome"
+            android:launchMode="singleTask">
+
+
+        </activity>
+        <activity android:name=".introduction"
+            android:launchMode="singleTask"/>
+        <activity android:name=".delete_reminding"
+            android:launchMode="singleTask"/>
+
+        <receiver
+            android:name=".homelistener"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.Anakin.drink_reminder.AlarmReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BootBroadcastReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AlarmActivity"
+            android:turnScreenOn="true"
+            android:launchMode="singleTask" />
+        <activity android:name=".setting_time_timepicker"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".reach_goal_congratulate"
+            android:launchMode="singleTask" />
+        <activity android:name=".setting_VolumeOfCup_NumberPicker"
+            android:launchMode="singleTask"/>
+        <activity android:name=".setting_time"
+            android:launchMode="singleTask"/>
+        <activity android:name=".setting_goals"
+            android:launchMode="singleTask"/>
+        <activity android:name=".setting_VolumeOfCup"
+            android:launchMode="singleTask"/>
+        <activity android:name=".settings"
+            android:launchMode="singleTask"/>
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

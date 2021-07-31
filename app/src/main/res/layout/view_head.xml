@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <TextView
+       android:id="@+id/text_switch_all"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="开启提醒"
+       android:layout_marginTop="11dp"
+       android:layout_marginStart="12dp"
+           android:textSize="16sp"
+       android:textColor="#C6C6C6"
+       />
+    <Switch
+        android:id="@+id/switch_all"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:checked="true"
+        android:thumb="@null"
+        android:track="@null"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/switch_reminding_item_background"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/switch_all"/>
+
+
+</RelativeLayout>

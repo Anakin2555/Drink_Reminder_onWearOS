@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="SkyBlue">#00BFFF</color>
+    <color name="skyblue_0">#00D9FF</color>
+    <color name="skyblue_1">#00BEFF</color>
+    <color name="skyblue_2">#0EA0E3</color>
+    <color name="skyblue_3">#056F93</color>
+    <color name="skyblue_4">#023140</color>
+    <color name="skyblue_5">#02141B</color>
+    <color name="tran">#00FFFFFF</color>
+    <color name="myblue">#0075D9</color>
+    <color name="darkBlue_2">#0A3645</color>
+    <color name="darkBlue">#2B2B4E</color>
+    <color name="mygrey">#021820</color>
+    <color name="grey">#9F9B9B</color>
+</resources>

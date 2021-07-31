@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="volume">
+        <item>50<small>ml</small></item>
+        <item>60<small>ml</small></item>
+        <item>80<small>ml</small></item>
+        <item>100<small>ml</small></item>
+        <item>120<small>ml</small></item>
+        <item>150<small>ml</small></item>
+        <item>160<small>ml</small></item>
+        <item>180<small>ml</small></item>
+        <item>200<small>ml</small></item>
+        <item>220<small>ml</small></item>
+        <item>240<small>ml</small></item>
+        <item>250<small>ml</small></item>
+        <item>280<small>ml</small></item>
+        <item>300<small>ml</small></item>
+        <item>330<small>ml</small></item>
+        <item>350<small>ml</small></item>
+        <item>380<small>ml</small></item>
+        <item>400<small>ml</small></item>
+        <item>420<small>ml</small></item>
+        <item>450<small>ml</small></item>
+        <item>480<small>ml</small></item>
+        <item>500<small>ml</small></item>
+        <item>550<small>ml</small></item>
+        <item>580<small>ml</small></item>
+        <item>600<small>ml</small></item>
+        <item>650<small>ml</small></item>
+        <item>700<small>ml</small></item>
+        <item>750<small>ml</small></item>
+        <item>800<small>ml</small></item>
+        <item>850<small>ml</small></item>
+        <item>900<small>ml</small></item>
+        <item>950<small>ml</small></item>
+        <item>1000<small>ml</small></item>
+
+
+
+    </string-array>
+    <string-array name="goal">
+
+        <item>500ml</item>
+        <item>600ml</item>
+        <item>700ml</item>
+        <item>800ml</item>
+        <item>900ml</item>
+        <item>1000ml</item>
+        <item>1100ml</item>
+        <item>1200ml</item>
+        <item>1300ml</item>
+        <item>1400ml</item>
+        <item>1500ml</item>
+        <item>1600ml</item>
+        <item>1700ml</item>
+        <item>1800ml</item>
+        <item>1900ml</item>
+        <item>2000ml</item>
+        <item>2100ml</item>
+        <item>2200ml</item>
+        <item>2300ml</item>
+        <item>2400ml</item>
+        <item>2500ml</item>
+        <item>2600ml</item>
+        <item>2700ml</item>
+        <item>2800ml</item>
+        <item>2900ml</item>
+        <item>3000ml</item>
+
+
+
+    </string-array>
+    <string-array name="hour24">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".settings">
+<com.heytap.wearable.support.widget.HeyBackTitleBar
+    android:id="@+id/heybacktitle_7"
+    android:layout_marginTop="-4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:heyText="更多设置"
+
+    />
+    <LinearLayout
+        android:layout_below="@id/heybacktitle_7"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/button_settings_1"
+            android:layout_width="170dp"
+            android:layout_height="41.5dp"
+            android:background="@drawable/button_3_background"
+            android:text="水杯容量"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAlignment="viewStart"
+            android:paddingStart="9dp"
+            android:layout_marginLeft="7dp"/>
+        <Button
+            android:id="@+id/button_settings_2"
+            android:layout_width="170dp"
+            android:layout_height="41.5dp"
+            android:background="@drawable/button_3_background"
+            android:text="喝水目标"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAlignment="viewStart"
+            android:paddingStart="9dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"/>
+        <Button
+            android:id="@+id/button_settings_3"
+            android:layout_width="170dp"
+            android:layout_height="41.5dp"
+            android:background="@drawable/button_3_background"
+            android:text="提醒时间"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAlignment="viewStart"
+            android:paddingStart="9dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:id="@+id/button_settings_5"
+            android:layout_width="170dp"
+            android:layout_height="41.5dp"
+            android:background="@drawable/button_3_background"
+            android:text="关于"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAlignment="viewStart"
+            android:paddingStart="9dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="  "/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">喝水助手</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="short_text_with_both">4</string>
+    <string name="short_title">ML</string>
+    <string name="short_text_only">0</string>
+    <string name="short_text_with_icon">1</string>
+    <string name="short_text_with_title">2</string>
+    <string name="title_activity_settings">settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
